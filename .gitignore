@@ -1,0 +1,10 @@
+.DS_Store
+.DS_Store?
+*.log
+*.sql
+*.sqlite
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
