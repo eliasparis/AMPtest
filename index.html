@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://tecnilogica.com" />
+    <link rel="canonical" href="http://tecnilogica.com"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
+        "headline": "Tecnilógica",
         "datePublished": "2015-10-07T12:02:41Z",
         "image": [
-          "logo.jpg"
+          "logo.png"
         ]
       }
     </script>
@@ -20,6 +20,9 @@
     <style>
       body{
         line-height: 20px;
+      }
+      h2{
+        color: darkslategray;
       }
       .main_section{
         color: gray;
@@ -31,6 +34,12 @@
       }
       .main_section > div.social{
         text-align: center;
+      }
+      .main_section > div.video{
+        padding: 0;
+      }
+      .main_section > div.carousel{
+        padding: 0;
       }
       .main_section > div#map{
         height: 60vh;
@@ -63,18 +72,20 @@
         display: block;
         height: 50%;
       }
-      .head_section .logo_tecni img{
+      .head_section .logo_tecni .logo{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
       }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   </head>
   <body>
     <section class="head_section">
       <div class="logo_tecni">
-        <amp-img src="src/img/logo.png" alt="Logo Tecnilógica" height="315"></amp-img>
+        <amp-img class="logo" src="src/img/logo.png" alt="Logo Tecnilógica" height="250" width="320"></amp-img>
       </div>
       <a id="scrolldown" href="#"></a>
     </section>
@@ -83,6 +94,13 @@
       <div>
         <h2>TecniTest - AMP</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div class="video">
+        <amp-youtube
+          data-videoid="X8SKmHBFkS0"
+          layout="responsive"
+          width="480" height="270">
+        </amp-youtube>
       </div>
       <div class="social">
         <amp-img src="http://orig05.deviantart.net/64ad/f/2014/195/0/7/social_media_icons_by_bokuwatensai-d7qq12k.png" alt="Social" width="150" height="150"></amp-img>
@@ -98,8 +116,12 @@
         <h2>AMPages</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."</p>
       </div>
-      <div class="social">
-        <amp-img src="https://s-media-cache-ak0.pinimg.com/236x/ec/ea/1a/ecea1a2100aed548ff2efcadb8160095.jpg" alt="wat?"></amp-img>
+      <div class="carousel">
+        <amp-carousel width=300 height=400>
+          <amp-img src="https://s-media-cache-ak0.pinimg.com/236x/ec/ea/1a/ecea1a2100aed548ff2efcadb8160095.jpg" width=300 height=400></amp-img>
+          <amp-img src="http://www.elperiodicodetudia.com/wp-content/uploads/2013/10/nequik2.jpg" width=300 height=400></amp-img>
+          <amp-img src="http://www.marketingdirecto.com/wp-content/uploads/2011/02/Twitter-retro.jpg" width=300 height=400></amp-img>
+        </amp-carousel>
       </div>
       <div class="social">
         <h2>FIN</h2>
