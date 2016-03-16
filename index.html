@@ -17,9 +17,95 @@
       }
     </script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style>
+      body{
+        line-height: 20px;
+      }
+      .main_section{
+        color: gray;
+        margin-top: 30px;
+        margin: 0 auto;
+      }
+      .main_section > div {
+        padding: 2em;
+      }
+      .main_section > div.social{
+        text-align: center;
+      }
+      .main_section > div#map{
+        height: 60vh;
+      }
+      #scrolldown {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        left: 50%;
+        margin-left: -25px;
+        bottom: 50px;
+        background: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/down4-32.png) no-repeat;
+        background-size : 100% 100%;
+      }
+      .head_section{
+        position: relative;
+        height: 90vh;
+        background: url("src/img/h_img.jpg") no-repeat;
+        background-position: center center;
+        background-size: cover;
+        -webkit-box-shadow: 0px -8px 23px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px -8px 23px 5px rgba(0,0,0,0.75);
+        box-shadow: 0px -8px 23px 5px rgba(0,0,0,0.75);
+      }
+      .head_section .logo_tecni{
+        position: relative; 
+        top: 20%;
+        width: 100%;
+        display: block;
+        height: 50%;
+      }
+      .head_section .logo_tecni img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    <h1>TecniAMP</h1>
+    <section class="head_section">
+      <div class="logo_tecni">
+        <amp-img src="src/img/logo.png" alt="Logo Tecnilógica" height="315"></amp-img>
+      </div>
+      <a id="scrolldown" href="#"></a>
+    </section>
+
+    <section class="main_section">
+      <div>
+        <h2>TecniTest - AMP</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div class="social">
+        <amp-img src="http://orig05.deviantart.net/64ad/f/2014/195/0/7/social_media_icons_by_bokuwatensai-d7qq12k.png" alt="Social" width="150" height="150"></amp-img>
+      </div>
+      <div>
+        <h2>Acelerated Mobile Pages</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."</p>
+      </div>
+      <div class="social">
+        <amp-img src="https://people.rit.edu/~bmd6715/230/exercises/images/cat.png" alt="Otro gato" width="300" height="300"></amp-img>
+      </div>
+      <div>
+        <h2>AMPages</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."</p>
+      </div>
+      <div class="social">
+        <amp-img src="https://s-media-cache-ak0.pinimg.com/236x/ec/ea/1a/ecea1a2100aed548ff2efcadb8160095.jpg" alt="wat?"></amp-img>
+      </div>
+      <div class="social">
+        <h2>FIN</h2>
+        <p>this is the end</p>
+      </div>
+    </section>
+
   </body>
 </html>
